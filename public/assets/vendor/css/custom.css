@@ -1,0 +1,322 @@
+.MuiDataGrid-main,.css-204u17-MuiDataGrid-main,
+.css-1e2bxag-MuiDataGrid-root{
+    font-family: inherit !important;
+}
+
+.MuiInputBase-root, .MuiOutlinedInput-root, .MuiInputBase-colorPrimary, .MuiInputBase-formControl, .MuiInputBase-adornedEnd, .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+    height:38px !important;
+}
+
+button, input, div, select, option, span, label, p{
+    font-family: inherit !important;
+}
+
+.text-dashboard{
+color: #313131 !important;
+}
+
+.form-label{
+    position: relative;
+    margin-top: 7px;
+}
+.form-label > span:first-child{
+    position: absolute;
+    cursor: text;
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    top: -7px;
+    right: 4px;
+    line-height: 1;
+    padding: 0 4px;
+    z-index: 3;
+    background-color: white;
+
+}
+
+.react-select__menu{
+    z-index: 5 !important;
+}
+
+.loading_sub {
+    position: absolute;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.loading {
+    position: absolute;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* Transparent Overlay */
+.loading:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(190, 190, 190, 0.8), rgba(204, 204, 204, 0.8));
+    background: -webkit-radial-gradient(rgba(156, 156, 156, 0.8), rgba(175, 175, 175, 0.8));
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+    /* hide "loading..." text */
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.loading:not(:required):after {
+    content: '';
+    display: block;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    -webkit-animation: spinner 150ms infinite linear;
+    -moz-animation: spinner 150ms infinite linear;
+    -ms-animation: spinner 150ms infinite linear;
+    -o-animation: spinner 150ms infinite linear;
+    animation: spinner 150ms infinite linear;
+    border-radius: 0.5em;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+    box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+}
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.react-confirm-alert-body{
+    text-align: inherit !important;
+    direction: ltr !important;
+}
+
+.react-confirm-alert-overlay{
+    background: rgb(219 219 219 / 54%) !important;
+    z-index: 1099 !important;
+}
+
+.ok-button{
+    background-color: rgb(6, 109, 6) !important;
+}
+
+.cancel-button{
+    background-color: rgb(182, 93, 93) !important;
+}
+
+.btn-row{
+    text-align: end;
+    padding-bottom:  0.5rem;
+}
+
+.css-1e2bxag-MuiDataGrid-root .MuiDataGrid-cellContent{
+    direction: ltr;
+}
+
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 400px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: solid 1px #b1adad;
+    border-radius: 0.4125rem;
+    padding: 10px;
+    max-height: 100%;
+    overflow: visible;
+  }
+
+  @media (max-width: 400px) {
+    .center {
+        position: fixed;
+        top: 50%;
+        left: 1%;
+        transform: translate(0%, -50%);
+        width: 98%;
+        max-width: 98%;
+        word-wrap: break-word;
+      }
+  }
+
+  .hg-50{
+    height: 50px !important;
+  }
+
+
+  .cart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .name {
+    flex: 3;
+  }
+  
+  .count {
+    flex: 1;
+  }
+  
+  .price {
+    flex: 1;
+    text-align: right;
+    color: #404040;
+  }
+  
+  .center1{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+
+
+  .invoice-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 12px;
+    border-bottom: 1px solid rgb(171, 171, 171);
+  }
+  
+  .invoice-item-field{
+    text-align: center;
+
+  }
+
+
+
+
+  .table,  .table>th,  .table>td {
+    width: 100%;
+    border-collapse: collapse !important;
+  }
+  
+ .table>th,  .table>td {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    padding: 0rem !important;
+  }
+  .table>tr:nth-child(even) {
+    background-color: rgba(232, 247, 247, 0.4);
+  }
+  
+  .table>th:nth-child(even),.table>td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
